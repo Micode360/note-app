@@ -96,3 +96,17 @@ header a:hover{
   margin-top: 40px;
   border: 1px solid #3a363617;
 }
+
+/*Editior*/
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.editor-class {
+  background-color:lightgray;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.toolbar-class {
+  border: 1px solid #ccc;
+}
