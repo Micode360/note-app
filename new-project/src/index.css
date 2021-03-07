@@ -1,42 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
   margin: 0;
   /* background: #841515; */
+  background: #fdf9f9 !important;
+  color: #333;
+  font-family: Rubik;
+  font-size: 13.5px !important;
+}
+
+header {
   background: #ffffff;
-  font-family:Arima Madurai;
-}
-
-/* .control-panel{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 300px;
-}
-
-
-.drum-pad{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(184, 169, 169);
-  font-size: 30px;
-  cursor: pointer;
-  border-radius: 39px;
-  margin: 15px;
-  width: 145px;
-  height: 145px;
-  border-radius: 23px;
-background: #841515;
-box-shadow:  7px 7px 14px #641010,
-             -7px -7px 14px #a41a1a;
+  flex-direction: row;
+  padding: 5px 25px;
+  border-bottom: 1px solid #3a363617;
 }
 
-.drum-pad:active{
-  color: rgb(143, 137, 137);
-  border-radius: 23px;
-  background: #841515;
-  box-shadow: inset 7px 7px 14px #641010,
-              inset -7px -7px 14px #a41a1a;
+header span {
+  margin-left: 15px;
 }
- */
+
+header a{
+  text-decoration: none;
+  color: #333;
+}
+
+header a:hover{
+  text-decoration: none;
+}
+
+.logo{
+  width: 100px;
+}
+
+.user-hero{
+  background-image: url(https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 30px !important;
+  margin-bottom: 45px;
+}
+
+.hero-title{
+  font-size:50px !important;
+  margin-bottom: 20px !important;
+}
+
+.article-title{
+  margin-left: 12px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+
+.note h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.note {
+  background: #ffffff;
+  padding: 30px 15px;
+  margin: 15px 15px;
+  font-size: 13.5px;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid #3a363617;
+}
+
+
+/*Add note page*/
+
+.form-container{
+  margin-top: 50px;
+}
+.button{
+  outline: none;
+  border: none;
+  padding:10px 30px;
+  color: #eee;
+  border-radius: 4px;
+  background-color: rgb(45, 47, 172);
+  margin-top: 12px;
+}
+
+
+.output{
+  background: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border: 1px solid #3a363617;
+}

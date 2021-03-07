@@ -1,11 +1,10 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path')
 const app = express();
 
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cors());
 require('dotenv').config();
 
@@ -15,23 +14,25 @@ mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, u
     .then(() => console.log("Database Connected Successfully"))
     .catch(err => console.log(err));
 
-//API
-const users = require('./api/users');
-app.use('./api/users', users);
-
-app.use(express.static(path.join(__dirname, '../build')))
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build'))
-})
 
 
-app.get('/acquire',(req, res)=>{
-        const information = {
-            name: 'Hi Im an express api',
-            description: 'I can do this all day'
+// app.use(express.static(path.join(__dirname, '../build')))
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../build'))
+// })
+
+app.get('/input', (req, res) => {
+    const store =  {
+            title: 'My app is life',
+            date: new Date()
         }
-        res.json(information);
-})
+    
+    res.json(store)
+    })
+
+    app.get('/', (req, res)=>{
+        res.send('hello');
+    })
 
 //process.env.PORT ||
 const port = 5000;
